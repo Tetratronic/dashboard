@@ -1,0 +1,46 @@
+body{
+    border: 2px solid black;
+
+}
+
+.main_container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    gap: 5px;
+}
+
+.left_menu{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: blue;
+}
+
+.navbar{
+    background-color: cadetblue;
+}
+.cards_body{
+    background-color: chartreuse;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4px;
+}
+.cards_container{
+    display: grid;
+}
+
+.card{
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+}
+.announcements{
+    width: 300px;
+    height: 500px;
+    background-color: blueviolet;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
