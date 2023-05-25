@@ -21,15 +21,21 @@ body{
 
 .navbar{
     background-color: cadetblue;
+    grid-row-end: 2;
+    
 }
-.cards_body{
+.main_content{
     background-color: chartreuse;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 4px;
 }
 .cards_container{
+    grid-column-start: 1;
+    grid-column-end: 5;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
 .card{
@@ -37,9 +43,21 @@ body{
     height: 200px;
     background-color: aqua;
 }
+.other{
+    padding: 10px;
+}
 .announcements{
-    width: 300px;
-    height: 500px;
+    width: 250px;
+    height: 400px;
+    background-color: blueviolet;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+.trending{
+    margin-top: 20px;
+    width: 250px;
+    height: 400px;
     background-color: blueviolet;
     grid-column-start: 5;
     grid-column-end: 6;
