@@ -23,8 +23,38 @@ body, html{
 .navbar{
     background-color: cadetblue;
     grid-row-end: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     
 }
+
+.topside{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    align-items: center;
+}
+.bottomside{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+#searchbar{
+width: 500px;
+height: 20px;
+padding: 6px;
+border-style: none;
+margin-top: 8px;
+margin-right: 16px;
+font-size: 17px;
+border-radius: 20px;
+}
+#searchbar:focus{
+    outline: none;
+    border-color: rgb(255, 0, 0);
+}
+
+
 .main_content{
     grid-row-start: 2;
     grid-row-end: 6;
