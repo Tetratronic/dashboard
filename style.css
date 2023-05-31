@@ -2,14 +2,14 @@ body, html{
     border: 2px solid black;
     margin: 0;
     padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .main_container{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr     ;
-    gap: 5px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr     ;   
 }
 
 .left_menu{
@@ -18,6 +18,33 @@ body, html{
     grid-row-start: 1;
     grid-row-end: 6;
     background-color: blue;
+    padding: 7px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    padding: 40px;
+    display: flex  ;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu-item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-item > h2{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .navbar{
@@ -123,15 +150,17 @@ border-radius: 20px;
     gap: 0px;
     width: 250px;
     min-height: 100px;
-    max-height: 350px;
+    max-height: 325px;
 
 }
 .announcements{
     width: 100%;
     height: 100%;
     background-color: white;
+    border-radius: 10px;
 }
 .trending{
+    border-radius: 10px;
     width: 100%;
     height: 100%;
     background-color: blueviolet;
